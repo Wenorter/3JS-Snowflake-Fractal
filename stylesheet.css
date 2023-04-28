@@ -1,0 +1,34 @@
+body {
+    font-family: Monospace;
+    background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,23,36,1) 90%);
+    color: skyblue;
+    margin: 0px;
+    overflow: hidden;
+}
+
+#canvas {
+    width: 100%; 
+    height: 100%;
+}
+
+#info {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    color: rgb(226, 243, 255);
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 10px #7a97e0, 0 0 2px #a6dbf2, 0 0 50px #21bcff, 0 0 40px #aad2db, 0 0 50px #66878a;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #7a97e0, 0 0 2px #a6dbf2, 0 0 60px #c0e4f4, 0 0 70px #00ffff, 0 0 80px #66878a;
+    }
+}
